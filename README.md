@@ -53,7 +53,7 @@ Now in powershell - python -m venv venv
 
 ### Step 4: Activate the Virtual Environment
 - For Windows PowerShell, run: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-- Then activate the environmet: in powershell = >.\venv\Scripts\Activate.ps1
+- Then activate the environmet: in powershell => .\venv\Scripts\Activate.ps1
   in cmd => venv\Scripts\activate.bat
   in macOS or Linux => source venv/bin/activate
 After successful activation, you should see (venv) at the beginning of your ter
