@@ -14,14 +14,14 @@ Users simply enter a movie name, and the sysytem displays five similar movies th
 - Displays messages when a movie is not found or the server is unavailable.
 
 ## Technologies Used
-Python - Main Programming language
-Pandas - Loading and processing movie datasets
-NumPy - Numerical operations
-Scikit-learn - Text vectorization and similarity calculation
-FastAPI - Devloping the backend API
-HTML - Creating the webpage structure
-CSS- Styling the website
-JavaScript - Handling search and communicating eith the backend
+Python - Main Programming language<br>
+Pandas - Loading and processing movie datasets<br>
+NumPy - Numerical operations<br>
+Scikit-learn - Text vectorization and similarity calculation<br>
+FastAPI - Devloping the backend API<br>
+HTML - Creating the webpage structure<br>
+CSS- Styling the website<br>
+JavaScript - Handling search and communicating eith the backend<br>
 
 ## How it works
 1.Dataset Loading - Movie informaton and credits are loaded from CSV files.
