@@ -81,7 +81,6 @@ After successful activation, you should see (venv) at the beginning of your term
 Install all the dependencies listed in `requirements.txt`:
 ```bash
 python -m pip install --upgrade pip
-pip install -r requirements.txt
 ```
 Wait until the installation is complete.
 ### Step 6: Check the Project Structure
