@@ -46,16 +46,33 @@ Follow these steps to run the project on your local computer.
 - Move into the project folder: Move into the project folder: cd "movie-recommender"
 
 ### Step 2: Open the Project in VS Code
-bash - code .
+```bash
+code .
+```
 
 ### Step 3: Create a Virtual Environment
-Now in powershell - python -m venv venv
-
+Create a virtual environment to manage the Python libraries required by the project.
+```powershell
+python -m venv venv
+```
 ### Step 4: Activate the Virtual Environment
-- For Windows PowerShell, run: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-- Then activate the environmet: in powershell => .\venv\Scripts\Activate.ps1
-  in cmd => venv\Scripts\activate.bat
-  in macOS or Linux => source venv/bin/activate
+For Windows PowerShell, run:
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+- Then activate the environmet:
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+For Windows Command Prompt (CMD), use:
+```cmd
+venv\Scripts\activate.bat
+```
+For macOS or Linux, use:
+```bash
+source venv/bin/activate
+```
+>>>>>>> 7db377d (Update README)
 After successful activation, you should see (venv) at the beginning of your ter
 ### Step 5: Install Required Libraries
 Install all the dependencies listed in `requirements.txt`:
@@ -65,10 +82,27 @@ pip install -r requirements.txt
 ```
 Wait until the installation is complete.
 ### Step 6: Check the Project Structure
+Make sure your project contains the following files and folders:
+
+```text
+movie-recommender/
+│
+├── api/
+│   └── main.py
+│
+├── public/
+│   ├── tmdb_500_movies_subset.csv
+│   └── tmdb_500_credits_subset.csv
+│
+├── index.html
+├── server.py
+├── requirements.txt
+└── README.md
+```
 ### Step 7: Run the Application
 Make sure you are in the main project directory and execute:
 ```bash
-python server.py
+pip install -r requirements.txt
 ```
 ### Step 8: Open the Website
 Open your web browser and visit:
@@ -130,4 +164,5 @@ Some features that can be added in future versions include:
 
 ## Learning Outcomes
 Developing this project helped us understand how recommendation systems work in real-world applications. We gained practical experience in dataset handling, data preprocessing, feature extraction, text vectorization and similarity calculation.
+
 
