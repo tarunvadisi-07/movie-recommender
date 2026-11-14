@@ -41,9 +41,12 @@ The movie dataset CSV files must also be available inside the public folder.
 ## How to Run the Project
 Follow these steps to run the project on your local computer.
 ### Step 1: Clone the Repository
-- Open PowerShell or the VS Code terminal and execute:
-  git clone https://github.com/tarunvadisi-07/movie-recommender.git
-- Move into the project folder: Move into the project folder: cd "movie-recommender"
+git clone https://github.com/tarunvadisi-07/movie-recommender.git
+```
+Move into the project directory:
+```bash
+cd movie-recommender
+```
 
 ### Step 2: Open the Project in VS Code
 ```bash
@@ -72,8 +75,7 @@ For macOS or Linux, use:
 ```bash
 source venv/bin/activate
 ```
->>>>>>> 7db377d (Update README)
-After successful activation, you should see (venv) at the beginning of your ter
+After successful activation, you should see (venv) at the beginning of your terminal line.
 ### Step 5: Install Required Libraries
 Install all the dependencies listed in `requirements.txt`:
 ```bash
