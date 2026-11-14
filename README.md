@@ -24,12 +24,12 @@ CSS- Styling the website<br>
 JavaScript - Handling search and communicating eith the backend<br>
 
 ## How it works
-1.Dataset Loading - Movie informaton and credits are loaded from CSV files.
-2.Data preprocessing - Unnecessary information is removed and useful details are extracted.
-3.Feature Extraction - Selected movie information is combined into a single text feature called tags.
-4.Text Vectorization - CountVectorizer converts the text information into numerical vectors.
-5.Similarity Calculation - Cosine Similarity compares the movie vectors.
-6.Recommendations - The system finds and displays the five most similar movies.
+1.Dataset Loading - Movie informaton and credits are loaded from CSV files.<br>
+2.Data preprocessing - Unnecessary information is removed and useful details are extracted.<br>
+3.Feature Extraction - Selected movie information is combined into a single text feature called tags.<br>
+4.Text Vectorization - CountVectorizer converts the text information into numerical vectors.<br>
+5.Similarity Calculation - Cosine Similarity compares the movie vectors.<br>
+6.Recommendations - The system finds and displays the five most similar movies.<br>
 
 ## Requirments
 - python 3.9
