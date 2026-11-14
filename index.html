@@ -14,6 +14,13 @@
         color: #cfe8ff;
         overflow-x: hidden;
     }
+    body {
+    background-image: url("https://miro.medium.com/v2/resize:fit:1100/format:webp/1*qR08Jxq0IHdvFtBsUhCe3Q.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
 
     /* Floating neon blue circles */
     .glow {
@@ -44,7 +51,7 @@
     h1 {
         font-size: 50px;
         font-weight: 700;
-        background: linear-gradient(90deg, #009bff, #61e5ff);
+        background: linear-gradient(90deg, #ed2635, #46cce7);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: fadeSlide 1.2s ease;
@@ -54,6 +61,17 @@
     @keyframes fadeSlide {
         from { opacity: 0; transform: translateY(-25px); }
         to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .bottom-box {
+        margin-top: 400px;
+        margin-right: 80px;
+        font-size: 20px;
+        font-weight: 300;
+        color: #e2d5d5a2;
+    }
+    .icon {
+        color: #ed2635;
     }
 
     .search-box {
@@ -74,7 +92,7 @@
         padding: 15px;
         font-size: 18px;
         background: rgba(0, 10, 25, 0.5);
-        border: 2px solid #0056ff88;
+        border: 2px solid #ed2635;
         border-radius: 14px;
         color: #d0e8ff;
         outline: none;
@@ -83,8 +101,8 @@
     }
 
     input:focus {
-        border-color: #009bff;
-        box-shadow: 0 0 12px #0084ff;
+        border-color: #ed2635;
+        box-shadow: 0 0 12px #ed2635;
     }
 
     button {
@@ -93,15 +111,15 @@
         border-radius: 14px;
         border: none;
         cursor: pointer;
-        background: linear-gradient(45deg, #006cff, #00d2ff);
+        background: linear-gradient(45deg, #ed2635, #8f2d35);
         color: white;
         transition: 0.3s;
-        box-shadow: 0 0 12px #006cffaa;
+        box-shadow: 0 0 12px #ed2635;
     }
 
     button:hover {
         transform: scale(1.07);
-        box-shadow: 0 0 20px #009bff;
+        box-shadow: 0 0 20px #ed2635;
     }
 
     /* Result cards */
@@ -139,11 +157,12 @@
     <h1>🎬 MOVIE RECOMMENDER</h1>
 
     <div class="search-box">
-        <input type="text" id="movieInput" placeholder="Enter a movie name...">
+        <input type="text" id="movieInput" placeholder="Enter a movie name... e.g - Avatar,Iron Man">
         <button onclick="recommend()">Search</button>
     </div>
 
     <div id="results"></div>
+    <div class="bottom-box">Where movie meets memories <span class="icon">&hearts;</span></div>
 </div>
 
 <script>
@@ -185,4 +204,3 @@ async function recommend() {
 
 </body>
 </html>
-
